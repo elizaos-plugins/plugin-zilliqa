@@ -152,7 +152,7 @@ function getActionHandler(actionName, actionDescription, tools) {
       });
       const response = composeResponseContext(result, currentState);
       const responseText = await generateResponse(runtime, response);
-      callback?.({
+      callback == null ? void 0 : callback({
         text: responseText,
         content: {}
       });
@@ -167,7 +167,7 @@ function getActionHandler(actionName, actionDescription, tools) {
         runtime,
         errorResponse
       );
-      callback?.({
+      callback == null ? void 0 : callback({
         text: errorResponseText,
         content: { error: errorMessage }
       });
@@ -322,8 +322,9 @@ Balance: ${balance} ZIL`;
     },
     {
       async get() {
+        var _a;
         try {
-          const address = zilliqa2.getZilliqa().wallet.defaultAccount?.address;
+          const address = (_a = zilliqa2.getZilliqa().wallet.defaultAccount) == null ? void 0 : _a.address;
           return `Zilliqa wallet address: ${address}
 `;
         } catch (error) {

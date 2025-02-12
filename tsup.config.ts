@@ -7,6 +7,7 @@ export default defineConfig({
     clean: true,
     format: ["esm"], // Ensure you're targeting CommonJS
     external: [
+        "@elizaos/core",
         "dotenv", // Externalize dotenv to prevent bundling
         "crypto", // Externalize crypto to use Node.js built-in module
         "fs", // Externalize fs to use Node.js built-in module
