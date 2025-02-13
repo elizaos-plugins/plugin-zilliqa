@@ -1,11 +1,10 @@
 {
-    "name": "@elizaos/plugin-zilliqa",
+    "name": "@elizaos-plugins/plugin-zilliqa",
     "version": "0.1.9",
     "main": "dist/index.js",
     "type": "module",
     "types": "dist/index.d.ts",
     "dependencies": {
-        "@elizaos/core": "workspace:*",
         "@goat-sdk/adapter-vercel-ai": "0.2.7",
         "@goat-sdk/core": "0.4.6",
         "@goat-sdk/plugin-zilliqa": "0.1.3",
