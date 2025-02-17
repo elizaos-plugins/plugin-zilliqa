@@ -21,10 +21,9 @@ pnpm install @elizaos/plugin-zilliqa
 
 ### Environment Variables
 
-```typescript
-EVM_PRIVATE_KEY=<Your EVM wallet private key>
-EVM_PROVIDER_URL=<Your RPC provider URL (e.g., Infura, Alchemy)>
-ENABLE_ZILLIQA=1
+```ini
+ZILLIQA_PRIVATE_KEY=<Your Zilliqa wallet private key>
+ZILLIQA_PROVIDER_URL=<Your RPC provider URL (e.g., Zilliqa mainnet)>
 ```
 
 ## Common Issues & Troubleshooting
